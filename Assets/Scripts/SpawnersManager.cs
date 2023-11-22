@@ -8,12 +8,12 @@ public class SpawnersManager : MonoBehaviour
 {
     private bool _isWork;
     private Random _random = new Random();
-    private Spavner[] _spavners;
+    private Spawner[] _spavners;
 
     private void Awake()
     {
         _isWork = true;
-        _spavners = GetComponentsInChildren<Spavner>();
+        _spavners = GetComponentsInChildren<Spawner>();
         StartCoroutine(Spam());
     }
 

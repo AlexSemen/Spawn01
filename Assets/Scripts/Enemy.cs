@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        _animator.SetFloat("Speed", Mathf.Abs(_speed));
+        _animator.SetFloat(AnimatorEnemyController.Params.Speed, Mathf.Abs(_speed));
         _rigidbody2D.velocity = transform.right * _speed;
     }
 
